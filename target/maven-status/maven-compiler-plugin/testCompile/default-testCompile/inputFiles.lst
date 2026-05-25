@@ -1,0 +1,9 @@
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/base/BasePage.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/hooks/Hooks.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/pages/AppointmentPage.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/pages/ConfirmationPage.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/pages/LoginPage.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/runners/TestRunner.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/steps/AppointmentSteps.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/steps/LoginSteps.java
+/Users/emmanuelbore/Desktop/SDET /Projects/UI/Cucumber BDD/cura-healthcare-automation/src/test/java/utils/WaitUtils.java
