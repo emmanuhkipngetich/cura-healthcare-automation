@@ -2,41 +2,61 @@ package pages;
 
 import base.BasePage;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ConfirmationPage extends BasePage {
+
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public ConfirmationPage(WebDriver driver) {
 
         super(driver);
+
+        this.driver = driver;
+
+        wait = new WebDriverWait(
+                driver,
+                Duration.ofSeconds(10)
+        );
     }
 
     // Facility
 
-    @FindBy(xpath = "//p[@id='facility']")
+    @FindBy(id = "facility")
     WebElement facility;
 
     // Healthcare Program
 
-    @FindBy(xpath = "//p[@id='program']")
+    @FindBy(id = "program")
     WebElement healthcareProgram;
 
     // Visit Date
 
-    @FindBy(xpath = "//p[@id='visit_date']")
+    @FindBy(id = "visit_date")
     WebElement visitDate;
 
     // Comment
 
-    @FindBy(xpath = "//p[@id='comment']")
+    @FindBy(id = "comment")
     WebElement comment;
 
     // Get Facility
 
     public String getFacility() {
+
+        wait.until(
+                ExpectedConditions.visibilityOf(
+                        facility
+                )
+        );
 
         return facility.getText();
     }
@@ -45,6 +65,12 @@ public class ConfirmationPage extends BasePage {
 
     public String getHealthcareProgram() {
 
+        wait.until(
+                ExpectedConditions.visibilityOf(
+                        healthcareProgram
+                )
+        );
+
         return healthcareProgram.getText();
     }
 
@@ -52,12 +78,24 @@ public class ConfirmationPage extends BasePage {
 
     public String getVisitDate() {
 
+        wait.until(
+                ExpectedConditions.visibilityOf(
+                        visitDate
+                )
+        );
+
         return visitDate.getText();
     }
 
     // Get Comment
 
     public String getComment() {
+
+        wait.until(
+                ExpectedConditions.visibilityOf(
+                        comment
+                )
+        );
 
         return comment.getText();
     }

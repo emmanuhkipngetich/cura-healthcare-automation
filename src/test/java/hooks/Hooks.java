@@ -19,8 +19,14 @@ public class Hooks {
 
         WebDriverManager.chromedriver().setup();
 
-        ChromeOptions options =
-                new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
+        //options.addArguments("--headless=new");
+        //options.addArguments("--no-sandbox");
+        //options.addArguments("--disable-dev-shm-usage");
+
+        driver = new ChromeDriver(options);
+
+
 
         options.addArguments(
                 "--disable-save-password-bubble"
